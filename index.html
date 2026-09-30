@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Una carta para Kai 💌</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=DM+Sans:wght@400;500&display=swap');
+*{box-sizing:border-box}body{margin:0;color:#62454e;background:#fff8f3;font-family:'DM Sans',sans-serif;min-height:100svh;background-image:linear-gradient(#eccdd530 1px,transparent 1px),linear-gradient(90deg,#eccdd530 1px,transparent 1px);background-size:28px 28px}
+main{min-height:100svh;display:grid;place-items:center;padding:32px 20px;overflow:hidden;position:relative}
+.scene{text-align:center;width:min(100%,560px);position:relative;z-index:2}small{letter-spacing:3px;text-transform:uppercase;font-size:11px;color:#9e717e}
+h1,h2{font-family:'Caveat',cursive;font-weight:600}h1{font-size:clamp(42px,9vw,62px);margin:15px 0 12px}h2{font-size:40px;margin:0 0 20px}
+.intro{color:#957580;font-size:14px;margin-bottom:45px}
+.envelope{display:block;position:relative;width:280px;height:180px;margin:0 auto 32px;border:0;border-radius:6px;background:#efb8ca;cursor:pointer;box-shadow:0 18px 35px #9a536e22;transition:transform .3s;perspective:800px}
+.envelope:hover{transform:translateY(-5px) rotate(-2deg)}.envelope:focus-visible,button:focus-visible{outline:3px solid #835267;outline-offset:6px}
+.envelope:before{content:'';position:absolute;inset:0;background:#f7ccda;clip-path:polygon(0 0,50% 59%,100% 0);transform-origin:top;transition:transform .6s}
+.envelope:after{content:'';position:absolute;inset:0;background:#eaa8bf;clip-path:polygon(0 100%,0 0,50% 59%,100% 0,100% 100%);border-radius:6px}
+.seal{position:absolute;z-index:3;left:calc(50% - 22px);top:78px;border-radius:50%;width:44px;height:44px;background:#b95176;color:#fff4f7;display:grid;place-items:center;font-size:22px;box-shadow:0 2px 5px #92456833}
+.envelope.open:before{transform:rotateX(180deg)}.hint{font-family:'Caveat',cursive;font-size:24px;color:#a85c77}
+.letter{background:#fffdf8;padding:36px 32px;text-align:left;border:1px solid #ecdcd4;box-shadow:0 12px 40px #885e7012;position:relative;animation:arrive .7s ease both;border-radius:3px;line-height:1.9}
+.letter:before{content:'♡';position:absolute;right:22px;top:12px;color:#c37190;font-size:35px;transform:rotate(14deg)}
+.letter p{font-size:16px;margin:0 0 19px}.letter .signature{font-family:'Caveat',cursive;color:#af5375;font-size:29px;margin:26px 0 0}
+.footer{font-family:'Caveat',cursive;font-size:26px;margin:28px 0 16px;color:#a85c77}
+.cars{font-size:34px;margin-top:20px;letter-spacing:10px}
+.again{background:transparent;border:0;border-bottom:1px solid #c99aa9;padding:8px 0;color:#946273;font:inherit;font-size:12px;cursor:pointer}
+.decor{position:absolute;color:#d6a2b3;font-size:27px;pointer-events:none;animation:float 6s ease-in-out infinite}
+.d1{top:12%;left:9%;transform:rotate(-20deg)}.d2{top:17%;right:12%;animation-delay:1s}.d3{bottom:12%;left:12%;animation-delay:2s}.d4{bottom:18%;right:8%;animation-delay:3s}
+[hidden]{display:none!important}@keyframes arrive{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}@keyframes float{50%{translate:0 -12px}}
+@media(max-width:420px){.letter{padding:30px 23px}.letter p{font-size:15px}main{padding:25px 16px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+body{background-color:#fff0f5;background-image:radial-gradient(ellipse at 10% 10%,#f8ccde80,transparent 55%),radial-gradient(ellipse at 90% 85%,#e9d7ff80,transparent 55%)}
+.envelope{animation:sway 4s ease-in-out infinite;width:min(300px,85vw);height:195px}.envelope.open{animation:none}.seal{top:85px}.letter{border-radius:16px;box-shadow:0 20px 70px #ad63852b;background-image:repeating-linear-gradient(transparent,transparent 35px,#f0dce52e 36px)}
+.letter>p{animation:arrive 1s both}.letter>p:nth-of-type(2){animation-delay:.2s}.letter>p:nth-of-type(3){animation-delay:.4s}
+.music{margin:0 auto 22px;max-width:390px;padding:16px;border-radius:18px;background:#ffffffb0;border:1px solid #ecc5d7;box-shadow:0 8px 24px #a6557912}.music p{margin:0 0 10px;font-size:13px}.music iframe{width:100%;height:190px;border:0;border-radius:10px}.music a{display:inline-block;font-size:12px;color:#97526e;margin-top:10px}
+.surprise{background:#b95176;color:white;border:0;border-radius:25px;padding:14px 25px;font:inherit;cursor:pointer;margin:22px 0 12px;box-shadow:0 8px 18px #b9517633}.extra{padding:25px;background:#fff8fc;border:1px dashed #d59ab4;border-radius:16px;margin:15px 0 22px;animation:arrive .6s both}.extra h2{font-size:34px;margin:0 0 12px}.extra p{line-height:1.8;font-size:15px}.love{font-family:'Caveat',cursive;font-size:40px!important;color:#ad4e74}
+.heart{position:fixed;bottom:-40px;pointer-events:none;z-index:1;color:#d985aa;animation:rise 10s linear infinite;font-size:22px;opacity:0}.ribbon{font-family:'Caveat',cursive;display:block;font-size:22px;color:#ab5d7c;margin-bottom:20px}.cars{animation:float 4s infinite}
+@keyframes sway{50%{transform:translateY(-8px) rotate(2deg)}}@keyframes rise{0%{opacity:0;transform:translateY(0) rotate(0)}10%{opacity:.45}90%{opacity:.3}100%{opacity:0;transform:translateY(-110vh) rotate(35deg)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.heart{display:none}}
+</style>
+</head>
+<body><main>
+<span class="decor d1">♡</span><span class="decor d2">✧</span><span class="decor d3">✧</span><span class="decor d4">♡</span>
+<section class="scene" id="closed">
+<small>Un pequeño detalle para ti</small><h1>Kai, tienes una cartita 💌</h1><p class="intro">Hecha con un poquito de código y mucho cariño.</p><span class="ribbon">Solo para hacerte sonreír ♡</span>
+<button class="envelope" id="envelope" aria-label="Abrir tu carta"><span class="seal">♡</span></button>
+<p class="hint">Toca el sobre para abrir tu carta</p><div class="cars" aria-hidden="true">🏎️ ♡</div>
+</section>
+<section class="scene" id="opened" hidden aria-label="Carta para Kai">
+<div class="music"><p>♫ Risk It All · para acompañar esta carta</p><iframe id="song" title="Reproducir Risk It All en YouTube" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><a href="https://youtu.be/nNJkh92SwUk" target="_blank" rel="noopener">Abrir la canción en YouTube ↗</a></div><article class="letter"><h2 tabindex="-1" id="letterTitle">Kai,</h2>
+<p>Gracias por los Hot Wheels que me regalaste hoy. Me gustaron mucho, pero lo más bonito fue que pensaras en mí y tuvieras ese detalle conmigo. Te amo mucho y te aprecio demasiado. Si en algún momento quieres hacer algo conmigo o necesitas algo de mí, puedes pedírmelo; lo haré con mucho cariño.</p>
+<p>Quería hacerte una manualidad, pero no soy muy bueno JSJSJ. Y como sabes que me manejo mejor en computación, decidí hacerte esta cartita virtual con mucho cariño.</p>
+<p>Es un detalle chiquitito, pero va con mucho cariño. Gracias por alegrarme el día; espero que al abrir esto también sonrías.</p>
+<p class="signature">Con cariño ♡</p></article>
+<button class="surprise" id="surprise" aria-expanded="false" aria-controls="extra">Hay algo más para ti… ♡</button><div class="extra" id="extra" hidden><h2>Mi plan favorito</h2><p>Es pasar tiempo contigo. Así que cuando quieras hacer algo juntos, dímelo. Me encantaría compartir más momentos contigo.</p><p class="love">Te amo mucho, Kai ♡</p><span aria-hidden="true">🏎️ 💗 🏎️</span></div><div class="cars" aria-hidden="true">🏎️ ♡ 🏎️</div><p class="footer">Un regalo bonito merece un gracias bonito.</p>
+<button class="again" id="again">Volver a guardar la carta</button>
+</section>
+</main><script>
+const closed=document.getElementById('closed'),opened=document.getElementById('opened'),envelope=document.getElementById('envelope');
+let pending=false;
+envelope.addEventListener('click',()=>{if(pending)return;pending=true;document.getElementById('song').src='https://www.youtube-nocookie.com/embed/nNJkh92SwUk?autoplay=1&playsinline=1';envelope.classList.add('open');setTimeout(()=>{closed.hidden=true;opened.hidden=false;document.getElementById('letterTitle').focus();pending=false},600)});
+document.getElementById('again').addEventListener('click',()=>{document.getElementById('song').removeAttribute('src');opened.hidden=true;closed.hidden=false;envelope.classList.remove('open');envelope.focus()});
+document.getElementById('surprise').addEventListener('click',()=>{const extra=document.getElementById('extra');extra.hidden=!extra.hidden;document.getElementById('surprise').setAttribute('aria-expanded',String(!extra.hidden));if(!extra.hidden)extra.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'})});
+for(let i=0;i<12;i++){const h=document.createElement('span');h.className='heart';h.textContent=i%3?'♡':'♥';h.style.left=(i*8+3)+'%';h.style.animationDelay=(-i*.9)+'s';h.style.animationDuration=(9+i%4)+'s';h.setAttribute('aria-hidden','true');document.body.appendChild(h)}
+</script></body></html>
